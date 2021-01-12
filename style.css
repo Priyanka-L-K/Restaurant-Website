@@ -1,0 +1,994 @@
+body {
+			font-family: latin;
+			color: white;
+			background: linear-gradient( 
+				rgba(0,0,0,0.65), rgba(0,0,0,0.65), rgba(0,0,0,0.38),rgba(0,0,0,0)
+				)
+				,url(screen.jpg)no-repeat;
+			background-size: cover;
+      /*height: 1000px;*/
+		}
+
+		.box{
+			float: left;
+			border: 1px solid none; 
+      margin: 10px;
+			}
+
+    .box1 {
+      float: right;
+      border: 1px solid none; 
+      margin: 10px;
+      margin-right: 40px;
+    }
+
+		.box ul li{
+			width: 120px;
+			float: left;
+			margin: 10px auto;
+			text-align: center;
+		}
+
+		.box ul li a{
+			text-decoration: none;
+			color: white;
+		}
+
+		.box ul li:hover{
+			background-color: #ff4c4c;
+		}
+
+		.opt form , input[type="button"] {
+			background-color: black;
+			color: white;
+			padding: 10px;
+			margin: -14px auto;
+			padding-left: 50px;
+			padding-right: 50px;
+			text-align: center;
+		}
+
+		.form, input[type="button"]:hover {
+			background-color: #ff4c4c;
+		}
+
+
+.dropdown-toggle.dropbttn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  border-radius: 0px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+}
+
+.btn:focus {
+  outline: 0px;
+}
+
+.btn:hover {
+  outline: 0px;
+}
+
+.btn-main {
+  background: #e7272d;
+  color: #fff;
+  border-color: #e7272d;
+}
+
+.btn-main:hover {
+  border-color: #111;
+  background: #111;
+  color: #fff;
+}
+
+.btn-white {
+  background: #fff;
+  color: #111;
+  border-color: #fff;
+}
+
+.btn-white:hover {
+  border-color: #e7272d;
+  background: #e7272d;
+  color: #fff;
+}
+
+.btn-black {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.btn-black:hover {
+  border-color: #e7272d;
+  background: #e7272d;
+  color: #fff;
+}
+
+.btn-solid-border {
+  border-color: #e5e5e5;
+  background: transparent;
+  color: #111;
+}
+
+.btn-solid-border:hover {
+  border-color: #111;
+  background: #111;
+  color: #fff;
+}
+
+.btn-main-border {
+  border-color: #e7272d;
+  background: transparent;
+  color: #111;
+}
+
+.btn-main-border:hover {
+  border-color: #e7272d;
+  background: #e7272d;
+  color: #fff;
+}
+
+.btn-sm {
+  padding: .3rem .7rem;
+}
+
+.text-lg {
+  font-size: 50px;
+}
+#main-nav {
+  z-index: 99;
+}
+.navbar-expand .navbar-nav  .nav-link {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #fff;
+  letter-spacing: .5px;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: 25px;
+  }
+}
+
+ul.dropdown-menu {
+  background: #fff;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+  border-top: 2px solid #e7272d;
+}
+ul.dropdown-menu > li > a {
+	font-size: 12px;
+  line-height: 22px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  color: #111;
+  text-transform: uppercase;
+}
+.navbar ul ul ul.dropdown-menu li .nav-link {
+  font-size: 12px;
+  line-height: 22px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding-left: 15px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+ul.dropdown-menu > li > a:hover,
+.navbar ul ul ul.dropdown-menu li .nav-link:hover {
+  background: #e7272d;
+  color: #fff;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  min-width: 100px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: center top 0;
+          transform-origin: center top 0;
+  -webkit-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+@media (max-width: 575px) {}
+  .btn-group,
+  .btn-group-vertical {
+    display: block;
+  }
+  .btn-group > .btn {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .btn-group,
+  .btn-group-vertical {
+    display: block;
+  }
+  .btn-group > .btn {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .btn-group,
+  .btn-group-vertical {
+    display: block;
+  }
+  .btn-group > .btn {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .btn-group,
+  .btn-group-vertical {
+    display: block;
+  }
+  .btn-group > .btn {
+    padding: 20px;
+  }
+}
+
+.dropdown-toggle::after {
+  content: " \f107";
+  font-family: "Font Awesome 5 free";
+  border: 0px;
+  font-size: 14px;
+  vertical-align: top;
+  margin-left: 10px;
+  font-weight: 100;
+}
+
+.navbar-expand-lg.main-nav .navbar-brand {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background: #fff;
+  border-radius: 0px;
+}
+
+@media (max-width: 575px) {
+  #main-nav {
+    background: #111;
+  }
+}
+
+@media (max-width: 400px) {
+  #main-nav {
+    background: #111;
+  }
+}
+
+@media (max-width: 767px) {
+  #main-nav {
+    background: #111;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-nav {
+    background: #111;
+  }
+}
+
+.timings {
+  background-color: rgba(0,0,0,0.15);
+  text-align: center;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  margin-top: 150px;
+  float: center;
+}
+
+/*.main {
+  background: black;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  margin-top: 55px;
+  float: center;
+}
+
+.footer-links {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+*/
+main {
+  max-height: 550px;
+  background-color: rgba(0,0,0,0.65);
+  color: white;
+  font-size: 38pt;
+  text-align: center;
+  line-height: 550px;
+} 
+footer{
+  position: fixed;
+  bottom: 0;
+}
+.footer-distributed{
+  background-color: rgba(0,0,0,0.65);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+  width: 40%;
+}
+ 
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+ 
+.footer-distributed h3 span{
+  color:  #ff4c4c;
+}
+ 
+ 
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+  width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+  color:  #ff4c4c;
+  text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+  width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+ 
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+ 
+ 
+@media (max-width: 880px) {
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+ 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+ 
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+  .main {
+    line-height: normal;
+    font-size: auto;
+  }
+ 
+}
+
+/*Recipes.html*/
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  background-color: rgba(0,0,0,0,1);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: bold 25px latin;
+  text-align: center;
+}
+
+.panel-content {
+  position:relative;
+  position: absolute;
+  background-color: rgba(0.1, 0.1, 0.1, 0.12);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: bold 25px latin;
+  text-align: center;
+  width:100%;
+  word-wrap: break-word;
+  margin-top: 200px;
+}
+
+.row > .column {
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/*
+.panel-content1 {
+  font-family: latin;
+  background-color:rgba(0,0,0,0.5);
+  font-size:24px;
+  text-align:center;
+  box-sizing:border-box;
+}
+*/
+
+/* The Modal (background)
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content 
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+*/
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: black
+  color: white;
+  margin: 8px 0;
+  margin-right:40px;
+  border: none;
+  cursor: pointer;
+  font-family: latin;
+  font-size: 20px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  /*width: auto;*/
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.containers {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  color: #ff4c4c;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff4c4c;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtnsi {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtnsi, .signupbtnsi {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.containersi {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modalsi {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-contentsi {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.closesi {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.closesi:hover,
+.closesi:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfixsi::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtnsi, .signupbtnsi {
+     width: 100%;
+  }
+}
+
+
+
+
+
+
+
+/*Contact.html*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+/* Caption text 
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 0px;
+}
+.img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.img-1{
+  background: url('https://images.unsplash.com/photo-1422205512921-12dac7b3b603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+.img-2{
+  background: url('https://images.unsplash.com/photo-1422205512921-12dac7b3b603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+.img-3{
+  background: url('https://images.unsplash.com/photo-1422205512921-12dac7b3b603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  
+}
+.img-4 {
+  background: url('https://images.unsplash.com/photo-1422205512921-12dac7b3b603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  
+}
+
+@media screen and (min-width: 800px) {
+  .row{
+    height: 700px; 
+  }
+  
+  .img{
+    height: 100%;  
+  }
+
+  .img-1,
+  .img-4 
+  .img-2,
+  .img-3 {
+    width: 33.33;
+  }
+}
+*/

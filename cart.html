@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title> CafeDine - Restaurant </title>
+
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ** Plugins Needed for the Project ** --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="style.css" rel="stylesheet">
+
+	<!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	</head>
+<body>
+
+	<!-- Header Start -->
+	<header class="navigation">
+		<nav class="navbar-expand" id="main-nav">
+			<div class="box">
+				<ul type="none">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="aboutus.html">ABOUT</a></li>
+					<li class="nav-item"><a class="nav-link" href="aboutus.html">MENU</a></li>
+					<li class="nav-item"><a class="nav-link" href="recipes.html">RECIPES</a></li>
+					<li class="nav-item"><a class="nav-link" href="order.html">ORDER IN</a></li>
+					<li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link" href="si.html">SIGN UP</a></li>
+				</ul>
+		</div>
+		<div class="box1">
+				<ul type="none">
+					<li class="nav-item">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</button>
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="containers">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="containers" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#" style="color: #ff4c4c">password?</a></span>
+    </div>
+  </form>
+</div>
+</li>
+</ul>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</li>
+</ul>
+</div>
+	</nav>
+</header>
+<!-- Header Close -->
+

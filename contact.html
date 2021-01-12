@@ -1,0 +1,171 @@
+<html>
+<head>
+	<title> CafeDine - Restaurant </title>
+
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ** Plugins Needed for the Project ** --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="style.css" rel="stylesheet">
+
+	<!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	</head>
+<body>
+
+	<!-- Header Start -->
+	<header class="navigation">
+		<nav class="navbar-expand" id="main-nav">
+			<div class="box">
+
+				<ul type="none">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="aboutus.html">ABOUT</a></li>
+					<li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+					<li class="nav-item"><a class="nav-link" href="recipes.html">RECIPES</a></li>
+					<li class="nav-item"><a class="nav-link" href="order.html">ORDER ONLINE</a></li>
+					<li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link" href="si.html">SIGN UP</a></li>
+				</ul>
+		</div>
+
+    <div class="box1">
+        <ul type="none">
+          <li class="nav-item">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</button>
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="containers">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="containers" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#" style="color: #ff4c4c">password?</a></span>
+    </div>
+  </form>
+</div>
+</li>
+</ul>
+</div>
+	</nav>
+</header>
+
+<div class="containerc">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="rowc">
+    <div class="columnc">
+      <img src="/w3images/map.jpg" style="width:100%">
+    </div>
+    <div class="columnc">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="main"> 
+    <footer class="footer-distributed">
+ 
+    <div class="footer-left">
+ 
+    <h3>Cafe<span>Dine</span></h3>
+ 
+    <div class="footer-links">
+    <a href="#">Home</a>
+  ·
+    <a href="#">About</a>
+  ·
+    <a href="#">Recipes</a>
+  ·
+    <a href="#">Gallery</a>
+  ·
+    <a href="#">Blog</a>
+  ·
+    <a href="#">Contact</a>
+    </div>
+ 
+    <p class="footer-company-name">cafedine &copy; 2019</p>
+    </div>
+ 
+    <div class="footer-center">
+ 
+    <div>
+    <i class="fa fa-map-marker"></i>
+    <p><span>21 Church Street</span> Bengaluru, India</p>
+    </div>
+ 
+    <div>
+    <i class="fa fa-phone"></i>
+    <p>+1 555 123456</p>
+    </div>
+ 
+    <div>
+    <i class="fa fa-envelope"></i>
+    <p><a href="mailto:support@company.com">contact@cafedine.com</a></p>
+    </div>
+ 
+    </div>
+ 
+    <div class="footer-right">
+ 
+    <p class="footer-company-about">
+    <span>About </span>
+  CafeDine is a contemporary Indian bistro showcasing techniques rooted in India but influenced by our regionality. CafeDine displays an inspiring take on vast Indian cuisine in a relaxing environment.
+    </p>
+ 
+    <div class="footer-icons">
+ 
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+ 
+    </div>
+ 
+    </div>
+</footer>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
